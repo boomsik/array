@@ -78,31 +78,33 @@ console.log(secondAddedBookJulia);
 var addedBooksViktorAndJulia = [firstAddedBookViktor,secondAddedBookViktor,firstAddedBookJulia,secondAddedBookJulia];
 console.log(addedBooksViktorAndJulia);
 
+ var listViktorAndJulia = listBooksViktor.concat(listBooksJulia,addedBooksViktorAndJulia);
+ console.log(listViktorAndJulia);
 
 
 
+var colors = ["красный", "зеленый", "синий"];
+console.log(colors.indexOf("синий"));
+console.log(colors.indexOf("зеленый"));
+
+var insects = ["Пчела", "Муравей", "Пчела", "Пчела", "Муравей"];
+console.log(insects.indexOf("Пчела"));
 
 
+// Превращаем массив в строку
 
+// var boringAnimals = ["Мартышка", "Кот", "Рыба", "Ящерица"];
+// console.log(boringAnimals.join());
 
+var boringAnimals = ["Мартышка", "Кот", "Рыба", "Ящерица"];
+console.log(boringAnimals.join("-"));
+console.log(boringAnimals.join("*"));
+console.log(boringAnimals.join("и"));
+console.log(boringAnimals.join(" и "));
+console.log(boringAnimals.join(" или "));
 
+var myNames = ["Николас", "Эндрю", "Максвелл", "Морган"];
+console.log(myNames.join(" "));
 
-
-
-
-
-
-
-var pigs = ["pig1","pig2","pig3"];
-pigs.push("pig5");
-var pigVlad = pigs[3];
-console.log(pigVlad);
-
-
-
-
-var pigindex = pigs.push("pig4");
-var addedPig = pigs[pigindex];
-console.log(pigindex);
-console.log(pigs);
-console.log(addedPig);
+var ages = [11, 14, 79];
+console.log(ages.join(" "));
