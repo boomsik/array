@@ -187,4 +187,61 @@ var phrases = [
     // Соединяем случайные строки в предложение:
     var randomInsult = "У тебя " + randomBodyPart + " словно " +  randomAdjective + " " + randomWord + "!!!";
    console.log(randomInsult);
- 
+
+   //Homework//
+//    #1. Новые дразнилки
+//     Сделайте генератор случайных дразнилок со своим набором 
+//     слов.
+        var randomBodyParts = ["рот", "ухо", "лицо"];
+        var randomAdjectives = ["сранная", "ущербная", "никчемная"];
+        var randomWords = ["тараканище", "жирафина", "псина", "жабина", "жучина"];
+        // Выбор случайной части тела из массива randomBodyParts:
+        var randomBodyPart = randomBodyParts[Math.floor(Math.random() * 3)];
+        // Выбор случайного прилагательного из массива randomAdjectives:
+        var randomAdjective = randomAdjectives[Math.floor(Math.random() * 3)];
+        // Выбор случайного слова из массива randomWords:
+        var randomWord = randomWords[Math.floor(Math.random() * 5)];
+        // Соединяем случайные строки в предложение:
+        var randomInsult = "У тебя " + randomBodyPart + " словно " +  randomAdjective + " " + randomWord + "!!!";
+        console.log(randomInsult);
+
+// #2. Изощренные дразнилки
+// Усовершенствуйте генератор дразнилок, чтобы он создавал дразнилки такого типа: «У тебя [часть тела] еще более [прилагательное], чем [часть тела животного] у [животное]». 
+// Подсказка: нужно будет создать еще один массив.
+
+            var randomBodyParts = ["рот", "ухо", "лицо", "нос", "бровь"];
+            var randomAdjectives = ["сранная", "ущербная", "никчемная", "длинная", "волосатая"];
+            var randomWords = ["таракана", "жирафa", "псины", "жабы", "слона"];
+            var randomAnimal = ["хвост","лапа","шея","ухо"]
+            // Выбор случайной части тела из массива randomBodyParts:
+            var randomBodyPart = randomBodyParts[Math.floor(Math.random() * 5)];
+            // Выбор случайного прилагательного из массива randomAdjectives:
+            var randomAdjective = randomAdjectives[Math.floor(Math.random() * 5)];
+            // Выбор случайного слова из массива randomWords:
+            var randomWord = randomWords[Math.floor(Math.random() * 5)];
+
+            var randomAnimal = randomAnimal[Math.floor(Math.random() * 5)];
+            // Соединяем случайные строки в предложение:
+            var randomInsult = "У тебя " + randomBodyPart + " еще более " +  randomAdjective + " чем " + randomAnimal  + " y " + randomWord +  "!!!";
+            console.log(randomInsult);
+
+            // #3. Оператор + или join?
+            // Сделайте две версии своего генератора дразнилок: одна пусть 
+            // использует для составления дразнилки оператор +, а другая создает массив со словами и соединяет их через пробел с помощью join. Какой вариант вам больше нравится и почему?
+            var randomBody = ["body","head","leg","hand","face"];
+            var randomInsult = ["worthless","flattened","Smelly"];//никчемный,расплющенный,вонючий
+            var randomAnimalss = ["cockroach","toad","beetle stink","poop"];
+            var randomBodies = randomBody[Math.floor(Math.random() * 3)];
+            var randomInsults = randomInsult[Math.floor(Math.random() * 3)];
+            var randomAnimalsss = randomAnimalss[Math.floor(Math.random() * 4)]
+            var randomWords = " Your " + randomBodies + " even more " + randomInsults + " than a " + randomAnimalsss + "!!!";
+            console.log(randomWords);
+       
+            // #4. Соединение чисел
+            // Как с помощью метода join превратить массив [3, 2, 1] в строку 
+            // "3 больше, чем 2 больше, чем 1"?
+        
+            var numbers = [3,2,1];
+            console.log(numbers.join(" больше, чем "));
+            
+        
