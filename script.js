@@ -138,3 +138,53 @@ landmarks.pop();
 landmarks.pop();
 //"Мой дом"
 console.log(landmarks);
+
+//Random selection//
+
+//Math.random();
+console.log(Math.random());
+console.log(Math.random());
+console.log(Math.random());
+
+console.log(Math.random()*10);
+console.log(Math.random()*100);
+console.log(Math.random()*1000);
+
+//Math.floor();//
+console.log(Math.floor(9.9999));
+console.log(Math.floor(6.7535));
+console.log(Math.floor(3.1412));
+
+console.log(Math.floor(Math.random() * 4));
+
+var randomWords = ["Взрыв", "Пещера", "Принцесса", "Карандаш"];
+var randomIndex = Math.floor(Math.random() * 4);
+// console.log(randomWords[randomIndex]);
+console.log(randomWords[Math.floor(Math.random() * 4)]);
+
+var phrases = [
+    "Звучит неплохо",
+    "Да, это определенно надо сделать",
+    "Не думаю, что это хорошая идея",
+    "Может, не сегодня?",
+    "Компьютер говорит нет"
+    ];
+    // Мне выпить еще молочного коктейля?
+    console.log(phrases[Math.floor(Math.random() * 5)]); 
+    // Мне пора делать домашнюю работу?
+    console.log(phrases[Math.floor(Math.random() * 5)]); 
+    
+    //Генератор случайных дразнилок
+    var randomBodyParts = ["глаз", "нос", "череп"];
+    var randomAdjectives = ["вонючая", "унылая", "дурацкая"];
+    var randomWords = ["муха", "выдра", "дубина", "мартышка", "крыса"];
+    // Выбор случайной части тела из массива randomBodyParts:
+    var randomBodyPart = randomBodyParts[Math.floor(Math.random() * 3)];
+    // Выбор случайного прилагательного из массива randomAdjectives:
+    var randomAdjective = randomAdjectives[Math.floor(Math.random() * 3)];
+     // Выбор случайного слова из массива randomWords:
+    var randomWord = randomWords[Math.floor(Math.random() * 5)];
+    // Соединяем случайные строки в предложение:
+    var randomInsult = "У тебя " + randomBodyPart + " словно " +  randomAdjective + " " + randomWord + "!!!";
+   console.log(randomInsult);
+ 
